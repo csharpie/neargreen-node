@@ -1,0 +1,15 @@
+extends layout
+
+block head
+  meta(name='viewport', content='initial-scale=1,maximum-scale=1,user-scalable=no')
+  script(src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.js')
+  link(rel='stylesheet', href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.37.0/mapbox-gl.css')
+  link(rel='stylesheet', href='/stylesheets/map.css')
+  title= title
+
+block content
+  script(src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v3.1.1/mapbox-gl-directions.js')
+  link(rel='stylesheet', href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v3.1.1/mapbox-gl-directions.css')
+  div(id='map')
+  script(type='text/javascript', src='/javascripts/map.js')
+    
